@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atelier No. 8 — original art, thoughtfully collected." />
+  <title>Atelier No. 8 — Contemporary Art</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="announcement">Complimentary insured shipping on acquisitions over $2,500 <button aria-label="Close announcement">×</button></div>
+  <header class="site-header">
+    <a class="wordmark" href="#" data-page="home" aria-label="Atelier No. 8 home"><span>ATELIER</span><b>№ 8</b></a>
+    <nav aria-label="Primary">
+      <button data-page="gallery">Artworks</button><button data-page="artists">Artists</button><button data-page="exhibitions">Exhibitions</button><button data-page="about">About</button>
+    </nav>
+    <div class="header-actions"><button class="search-btn" aria-label="Search">⌕</button><button class="bag-btn" aria-label="Open collection bag">Bag <span class="bag-count">0</span></button><button class="menu-btn" aria-label="Open menu">Menu</button></div>
+  </header>
+
+  <main id="main">
+    <section class="page active" id="home">
+      <div class="hero">
+        <div class="hero-copy"><p class="eyebrow">New presentation · Autumn 2026</p><h1>Art that<br><em>stays with you.</em></h1><p class="lede">Original works by independent artists, selected slowly and shared with care.</p><button class="text-link" data-page="gallery">Explore the collection <span>↗</span></button></div>
+        <figure class="hero-art"><img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1600&q=86" alt="Abstract painting in ochre, black and cream" /><figcaption><span>Elena Mora<br><i>After the Rain, 2025</i></span><b>01 / 05</b></figcaption></figure>
+        <p class="vertical-note">EST. 2026 · LONDON / LAGOS / WORLDWIDE</p>
+      </div>
+      <section class="intro"><p class="section-no">01 — Curated, not crowded</p><h2>We believe finding art should feel personal, never overwhelming.</h2><p>Each work is chosen for its presence, craft, and point of view. Meet the artists, spend time with the work, and collect with confidence.</p></section>
+      <section class="featured"><div class="section-head"><h2>Recently arrived</h2><button class="text-link" data-page="gallery">View all 48 works →</button></div><div class="art-grid" id="featured-grid"></div></section>
+      <section class="artist-focus"><div class="focus-image"><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1400&q=85" alt="Expressive blue abstract painting" /></div><div class="focus-copy"><p class="eyebrow">Artist focus · 02</p><h2>Amara<br>Okafor</h2><p>“I paint the memory of a place—not the place itself.”</p><p class="bio">Working between Lagos and London, Amara builds luminous fields from pigment, wax, and fragments of found cloth.</p><button class="outline-btn" data-page="artists">Visit the studio <span>↗</span></button></div></section>
+      <section class="newsletter"><p class="eyebrow">Private view</p><h2>A considered note on new works, artists, and exhibitions.</h2><form><label><span class="sr-only">Email address</span><input type="email" placeholder="Your email address" required></label><button>Join the list ↗</button></form><small>Sent occasionally. Unsubscribe whenever you like.</small></section>
+    </section>
+
+    <section class="page" id="gallery">
+      <div class="page-title"><p class="eyebrow">The collection · 48 original works</p><h1>Find something<br>that moves you.</h1></div>
+      <div class="filter-bar"><button class="filter-toggle" aria-expanded="false">Filter works <span>+</span></button><div class="filters"><label>Artist<select id="artist-filter"><option value="all">All artists</option><option>Elena Mora</option><option>Amara Okafor</option><option>Lucien Park</option><option>Nadia Bell</option></select></label><label>Medium<select id="medium-filter"><option value="all">All media</option><option>Oil</option><option>Mixed media</option><option>Photography</option></select></label><label>Price<select id="price-filter"><option value="all">Any price</option><option value="under">Under $2,500</option><option value="over">$2,500+</option></select></label><button id="clear-filters">Clear</button></div><p><span id="result-count">8</span> works</p></div>
+      <div class="masonry" id="gallery-grid"></div>
+    </section>
+
+    <section class="page" id="artists">
+      <div class="page-title"><p class="eyebrow">The artists · 12 practices</p><h1>Distinct voices.<br>Shared curiosity.</h1></div>
+      <div class="artist-list">
+        <article><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1200&q=84" alt="Artwork by Amara Okafor"><div><p>01 · Lagos / London</p><h2>Amara Okafor</h2><span>Mixed media · Abstraction</span><button class="text-link open-artist">View profile ↗</button></div></article>
+        <article><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&q=84" alt="Artwork by Elena Mora"><div><p>02 · Barcelona</p><h2>Elena Mora</h2><span>Oil · Colour field</span><button class="text-link open-artist">View profile ↗</button></div></article>
+        <article><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=84" alt="Artwork by Lucien Park"><div><p>03 · Seoul / Paris</p><h2>Lucien Park</h2><span>Photography · Landscape</span><button class="text-link open-artist">View profile ↗</button></div></article>
+      </div>
+    </section>
+
+    <section class="page" id="exhibitions">
+      <div class="page-title"><p class="eyebrow">Programme · 2026</p><h1>Exhibitions,<br>in real space.</h1></div>
+      <div class="exhibition-hero"><img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?auto=format&fit=crop&w=1800&q=86" alt="Minimal contemporary gallery interior"><div><p class="eyebrow">Now showing · 18 Sep—02 Nov</p><h2>The space between things</h2><p>A group exhibition on pause, memory, and the architecture of attention.</p><button class="outline-btn">Plan your visit ↗</button></div></div>
+      <div class="programme"><div><span>12 Nov 2026—10 Jan 2027</span><h3>Soft Monuments</h3><p>Amara Okafor · Solo presentation</p></div><div><span>06 Feb—21 Mar 2027</span><h3>Light, Held</h3><p>Lucien Park · New photographs</p></div></div>
+    </section>
+
+    <section class="page" id="about">
+      <div class="page-title about-title"><p class="eyebrow">Our point of view</p><h1>Collecting art is<br><em>a conversation.</em></h1></div>
+      <div class="about-grid"><img src="https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=1400&q=84" alt="Close-up of painted canvas"><div><h2>A gallery for looking slowly.</h2><p>Atelier No. 8 brings together original work by a small, evolving group of contemporary artists. We value practices that reward attention and objects made to endure.</p><p>We work closely with artists, price transparently, and help first-time and established collectors alike find work that feels genuinely their own.</p><button class="outline-btn" id="contact-btn">Start a conversation ↗</button></div></div>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#" data-page="home"><span>ATELIER</span><b>№ 8</b></a><div><button data-page="gallery">Artworks</button><button data-page="artists">Artists</button><button data-page="exhibitions">Exhibitions</button><button data-page="about">About</button></div><div><a href="mailto:hello@atelierno8.gallery">hello@atelierno8.gallery</a><span>London · Lagos · Worldwide</span></div><p>© 2026 Atelier No. 8 <span>Privacy · Terms · Accessibility</span></p></footer>
+
+  <dialog id="art-dialog" class="art-dialog"><button class="dialog-close" aria-label="Close">×</button><div class="detail-image"><img id="detail-image" alt=""></div><div class="detail-copy"><p class="eyebrow" id="detail-artist"></p><h2 id="detail-title"></h2><p id="detail-meta"></p><h3 id="detail-price"></h3><p class="detail-note">Original work · Signed by the artist<br>Includes certificate of authenticity</p><button class="buy-btn" id="add-to-bag">Add to bag</button><button class="inquire-btn">Ask about this work</button><details><summary>Artwork details</summary><p>One-of-a-kind original artwork. Framing recommendations and condition report available on request.</p></details><details><summary>Shipping & returns</summary><p>Complimentary insured delivery over $2,500. Returns accepted within 14 days.</p></details></div></dialog>
+  <aside class="cart" aria-hidden="true"><div class="cart-head"><h2>Your bag</h2><button class="cart-close" aria-label="Close bag">×</button></div><div id="cart-items"><p class="empty-cart">Your bag is waiting for something beautiful.</p></div><div class="cart-total"><p><span>Subtotal</span><b id="subtotal">$0</b></p><small>Shipping and taxes calculated at checkout.</small><button class="buy-btn" id="checkout-btn" disabled>Continue to checkout</button></div></aside><div class="scrim"></div>
+  <dialog id="checkout-dialog" class="checkout"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">Secure checkout · Step 1 of 2</p><h2>Where should<br>we send your art?</h2><form id="checkout-form"><label>Full name<input required autocomplete="name"></label><label>Email<input required type="email" autocomplete="email"></label><div><label>Country<select><option>Nigeria</option><option>United Kingdom</option><option>United States</option><option>France</option></select></label><label>Postal code<input required autocomplete="postal-code"></label></div><label>Delivery address<input required autocomplete="street-address"></label><button class="buy-btn">Continue to payment</button></form></dialog>
+  <div class="toast" role="status" aria-live="polite">Added to your bag</div>
+  <script src="app.js"></script>
+</body>
+</html>
